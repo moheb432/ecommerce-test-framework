@@ -8,28 +8,24 @@ A complete QA testing repository for an E-Commerce API, containing:  • Manual 
 | TC_LOGIN_003 | Login with invalid email format | None | Invalid email | 1. POST /login | 400 Invalid email format | New | - | Not Executed | - | API-LOGIN-03 | Validation | Medium | Low |
 | TC_LOGIN_004 | Login with empty email | None | Password only | 1. POST /login | 400 Email required | New | - | Not Executed | - | API-LOGIN-04 | Negative | Medium | Low |
 | TC_LOGIN_005 | Login with empty password | None | Email only | 1. POST /login | 400 Password required | New | - | Not Executed | - | API-LOGIN-05 | Negative | Medium | Low |
-
-| TC_PRD_001 | Successfully add product | Login completed | Valid product fields | 1. POST /product | Product added successfully (201) | New | - | Not Executed | - | API-PROD-01 | Functional | High | High |
+| TC_PRD_001 | Successfully add product | Login completed | Valid product fields | 1. POST /product | Product added successfully (201) | New | - | Not Executed | - | API-PROD-01 | Functional | High | High 
 | TC_PRD_002 | Add product with missing name | Login completed | Name empty | 1. POST /product | 500 Server/App validation error | New | - | Not Executed | - | API-PROD-02 | Negative | High | Medium |
 | TC_PRD_003 | Add product with missing price | Login completed | Price empty | 1. POST /product | 500 Server/App validation error | New | - | Not Executed | - | API-PROD-03 | Negative | Medium | Medium |
 | TC_PRD_004 | Add product with invalid price symbols | Login completed | Price = "@#$%" | 1. POST /product | 500 Server error | New | - | Not Executed | - | API-PROD-04 | Validation | Medium | Medium |
 | TC_PRD_005 | Add product without authentication token | None | Valid product | 1. POST /product without token | 401 Unauthorized | New | - | Not Executed | - | API-PROD-05 | Security | High | High |
 | TC_PRD_006 | Auto reject long product name | Login completed | Name 150+ chars | 1. POST /product | 400 Name too long | New | - | Not Executed | - | API-PROD-06 | Validation | Medium | Low |
 | TC_PRD_007 | Add product with invalid category | Login completed | Category numeric or invalid | 1. POST /product | 400 Category validation error | New | - | Not Executed | - | API-PROD-07 | Validation | Medium | Low |
-
 | TC_ORD_001 | Successfully add order | Login completed, product added | Valid product + order details | 1. POST /order | Order added successfully (201) | New | - | Not Executed | - | API-ORD-01 | Functional | High | High |
 | TC_ORD_002 | Add order without product existing | Login completed | Invalid product ID | 1. POST /order | 500 Business logic error | New | - | Not Executed | - | API-ORD-02 | Negative | High | High |
 | TC_ORD_003 | Add order without token | Product exists | Valid data | 1. POST /order no token | 401 Unauthorized | New | - | Not Executed | - | API-ORD-03 | Security | High | High |
 | TC_ORD_004 | Add order with invalid product ID format | Login completed | Product ID = "@#$" | 1. POST /order | 400 Format validation error | New | - | Not Executed | - | API-ORD-04 | Validation | Medium | Medium |
 | TC_ORD_005 | Add order with negative price or quantity | Login completed | Order = negative | 1. POST /order | 400 Invalid numeric value | New | - | Not Executed | - | API-ORD-05 | Validation | Medium | Medium |
 | TC_ORD_006 | Add order with expired token | Login completed | Expired token | 1. POST /order | 401 Token expired | New | - | Not Executed | - | API-ORD-06 | Security | Medium | Medium |
-
 | TC_DEL_PRD_001 | Delete an existing product successfully | Login completed, product exists | Product ID valid | 1. DELETE /product/{id} | 200 Product deleted | New | - | Not Executed | - | API-DEL-PROD-01 | Functional | High | High |
 | TC_DEL_PRD_002 | Delete product without token | Product exists | Product ID valid | 1. DELETE /product/{id} no token | 401 Unauthorized | New | - | Not Executed | - | API-DEL-PROD-02 | Security | High | High |
 | TC_DEL_PRD_003 | Delete product that does not exist | Login completed | Invalid Product ID | 1. DELETE /product/{id} | 404 Product Not Found | New | - | Not Executed | - | API-DEL-PROD-03 | Negative | Medium | Low |
 | TC_DEL_PRD_004 | Delete product while existing order refers to it | Login completed, product + order exist | Product ID still in use | 1. DELETE /product/{id} | 409 Cannot delete due to existing order | New | - | Not Executed | - | API-DEL-PROD-04 | Functional | High | High |
 | TC_DEL_PRD_005 | Delete product twice | Login completed, product deleted already | Product ID deleted | 1. DELETE /product/{id} again | 404 Not Found | New | - | Not Executed | - | API-DEL-PROD-05 | Negative | Medium | Medium |
-
 | TC_DEL_ORD_001 | Delete existing order successfully | Login completed, product + order exist | Order ID valid | 1. DELETE /order/{id} | 200 Order deleted | New | - | Not Executed | - | API-DEL-ORD-01 | Functional | High | High |
 | TC_DEL_ORD_002 | Delete order without token | Order exists | Order ID valid | 1. DELETE /order/{id} no token | 401 Unauthorized | New | - | Not Executed | - | API-DEL-ORD-02 | Security | High | High |
 | TC_DEL_ORD_003 | Delete order that does not exist | Login completed | Invalid Order ID | 1. DELETE /order/{id} | 404 Not Found | New | - | Not Executed | - | API-DEL-ORD-03 | Negative | Medium | Low |
