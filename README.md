@@ -23,7 +23,12 @@ All test cases were executed **twice**:
 1. **Manual execution** using Postman  
 2. **Automated execution** using Rest Assured
  
-#Postman testing using the Testcases_csv_data
+# Postman testing using the Testcases_csv_data
 In **Postman**, all test cases were executed using a **CSV file** to supply test data.  
 At least **10 different data sets** were used for execution.
+on runing more than 14 iteration on the 25 testcase written above it was noticed that 
+1. **Adding product takes more than 2secs to run
+2. **the Api is careless about Both productCategory and ProductFor case if both of them special character or empty
+3. the -ve price may be added on the API  
 as shown in figure below 
+![Postman Testing](https://drive.google.com/file/d/1d-OrMZW-NmUZH634esJxkx0Savqk8prD/view?usp=sharing)
