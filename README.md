@@ -9,4 +9,14 @@ A complete QA testing repository for an E-Commerce API, containing:  • Manual 
 | TC_DEL_PRD_001 | Delete an existing product successfully | Login completed, product exists | Product ID valid | 1. DELETE /product/{id} | 200 Product deleted | New | - | Not Executed | - | API-DEL-PROD-01 | Functional | High | High |
 
 ### for further information about the test cases and  BUg report check this Goolge sheet: https://docs.google.com/spreadsheets/d/1WQCFs7W8hVGIZ4bgPn9ORz6M2nqb7BldCLi13V_ZzH8/edit?usp=sharing
+as 
+# API Test Execution Report
+
+**Summary:** 18 out of 26 test cases passed, 8 failed.
+
+| Bug ID | Description                                           | Steps to Reproduce                                       | Expected Result                        | Actual Result                                     | Severity |
+|--------|-------------------------------------------------------|---------------------------------------------------------|----------------------------------------|--------------------------------------------------|----------|
+| BUG-001 | API accepts negative numbers in `productPrice`       | Send POST request with `productPrice = -500`           | API should reject negative prices      | API accepts negative price                        | High     |
+| BUG-002 | API accepts empty `productFor` field                | Send POST request with `productFor = ""`               | API should require a valid value       | API accepts empty value                           | Medium   |
+| BUG-003 | API accepts special characters in `productCategory` | Send POST request with `productCategory = "@Fashion!"` | API should reject special characters   | API accepts special characters                     | Medium   |
 
