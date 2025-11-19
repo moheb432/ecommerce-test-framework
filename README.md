@@ -30,5 +30,7 @@ on runing more than 14 iteration on the 25 testcase written above it was noticed
 1. **Adding product takes more than 2secs to run
 2. **the Api is careless about Both productCategory and ProductFor case if both of them special character or empty
 3. the -ve price may be added on the API  
-as shown in figure below 
-![Postman Testing](https://drive.google.com/file/d/1d-OrMZW-NmUZH634esJxkx0Savqk8prD/view?usp=sharing)
+as shown in figure below
+
+<img width="1185" height="630" alt="image" src="https://github.com/user-attachments/assets/a837312d-37a5-4492-9f05-fae783156f0f" />
+
