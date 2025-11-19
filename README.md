@@ -8,8 +8,7 @@ A complete QA testing repository for an E-Commerce API, containing:  • Manual 
 | TC_ORD_001 | Successfully add order | Login completed, product added | Valid product + order details | 1. POST /order | Order added successfully (201) | New | - | Not Executed | - | API-ORD-01 | Functional | High | High |
 | TC_DEL_PRD_001 | Delete an existing product successfully | Login completed, product exists | Product ID valid | 1. DELETE /product/{id} | 200 Product deleted | New | - | Not Executed | - | API-DEL-PROD-01 | Functional | High | High |
 
-### for further information about the test cases and  BUg report check this Goolge sheet: https://docs.google.com/spreadsheets/d/1WQCFs7W8hVGIZ4bgPn9ORz6M2nqb7BldCLi13V_ZzH8/edit?usp=sharing
-as 
+### for further information about the test cases and  BUg report check this Goolge sheet: https://docs.google.com/spreadsheets/d/1WQCFs7W8hVGIZ4bgPn9ORz6M2nqb7BldCLi13V_ZzH8/edit?usp=sharing 
 # API Test Execution Report
 
 **Summary:** 18 out of 26 test cases passed, 8 failed.
@@ -20,3 +19,6 @@ as
 | BUG-002 | API accepts empty `productFor` field                | Send POST request with `productFor = ""`               | API should require a valid value       | API accepts empty value                           | Medium   |
 | BUG-003 | API accepts special characters in `productCategory` | Send POST request with `productCategory = "@Fashion!"` | API should reject special characters   | API accepts special characters                     | Medium   |
 
+All test cases were executed **twice**:  
+1. **Manual execution** using Postman  
+2. **Automated execution** using Rest Assured
