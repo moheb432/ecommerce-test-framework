@@ -22,3 +22,7 @@ A complete QA testing repository for an E-Commerce API, containing:  • Manual 
 All test cases were executed **twice**:  
 1. **Manual execution** using Postman  
 2. **Automated execution** using Rest Assured
+#Postman testing using the Testcases_csv_data
+In **Postman**, all test cases were executed using a **CSV file** to supply test data.  
+At least **10 different data sets** were used for execution.
+as shown in figure below 
