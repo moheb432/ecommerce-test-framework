@@ -1,6 +1,6 @@
 # ecommerce-test-framework
 A complete QA testing repository for an E-Commerce API, containing:  • Manual Testing documentation • Postman test collections for functional and regression validation • Automated API Testing framework using RestAssured + TestNG + Cucumber • Performance &amp; Load Testing using Apache JMeter  This project demonstrates end-to-end testing coverage
-## Test cases 
+## samples of Test cases 
 | TestCase ID | Test Case Title / Objective | Pre-condition | Test Data | Steps | Expected Results | Status | Actual Results | Execution Status | Attachment | Requirement ID | Type | Prio | Sev |
 |-------------|----------------------------|----------------|-----------|-------|------------------|--------|----------------|------------------|------------|-----------------|------|------|-----|
 | TC_LOGIN_001 | Successful login with valid credentials | None | Email + Valid Password | 1. POST /login | Login successful (200), token returned | New | - | Not Executed | - | API-LOGIN-01 | Functional | High | High |
