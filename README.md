@@ -10,3 +10,5 @@ A complete QA testing repository for an E-Commerce API, containing:  • Manual 
 | TC_DEL_PRD_001 | Delete an existing product successfully | Login completed, product exists | Product ID valid | 1. DELETE /product/{id} | 200 Product deleted | New | - | Not Executed | - | API-DEL-PROD-01 | Functional | High | High |
 | TC_DEL_PRD_002 | Delete product without token | Product exists | Product ID valid | 1. DELETE /product/{id} no token | 401 Unauthorized | New | - | Not Executed | - | API-DEL-PROD-02 | Security | High | High |
 | TC_DEL_ORD_001 | Delete existing order successfully | Login completed, product + order exist | Order ID valid | 1. DELETE /order/{id} | 200 Order deleted | New | - | Not Executed | - | API-DEL-ORD-01 | Functional | High | High |
+### for further information about the test cases and  BUg report check this Goolge sheet: https://docs.google.com/spreadsheets/d/1WQCFs7W8hVGIZ4bgPn9ORz6M2nqb7BldCLi13V_ZzH8/edit?usp=sharing
+
