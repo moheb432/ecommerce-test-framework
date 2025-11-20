@@ -1,0 +1,2444 @@
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/api/ecom/order/create-order
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "orders": [
+        {
+            "productOrderedId": "691dadbb5008f6a9092aac99",
+            "country": "egypt"
+        }
+    ]
+}
+HTTP/1.1 201 Created
+Date: Wed, 19 Nov 2025 11:45:01 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 123
+ETag: W/"7b-Xj7DrVOzci+asNGjdZ+YJm7hkiE"
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+
+{
+    "orders": [
+        "691dadbd5008f6a9092aac9e"
+    ],
+    "productOrderId": [
+        "691dadbb5008f6a9092aac99"
+    ],
+    "message": "Order Placed Successfully"
+}
+Request method:	DELETE
+Request URI:	https://rahulshettyacademy.com/api/ecom/order/delete-order/691dadbd5008f6a9092aac9e
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	orderId=691dadbd5008f6a9092aac9e
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 19 Nov 2025 11:45:02 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 41
+ETag: W/"29-bffoZhIu2/PhrYGwacnOeGY9WaM"
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+
+{
+    "message": "Orders Deleted Successfully"
+}
+Request method:	DELETE
+Request URI:	https://rahulshettyacademy.com/api/ecom/product/delete-product/691dadbb5008f6a9092aac99
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	productId=691dadbb5008f6a9092aac99
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 19 Nov 2025 11:45:03 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 42
+ETag: W/"2a-2mOwR6FOFcYds+NaVy6wWIOyKCY"
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+
+{
+    "message": "Product Deleted Successfully"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/api/ecom/product/get-product-detail/691dadbb5008f6a9092aac99
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	productId=691dadbb5008f6a9092aac99
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Date: Wed, 19 Nov 2025 11:45:04 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 31
+ETag: W/"1f-Zkgaox/LmBaRs1Ofkuc8bu8COvo"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "message": "Product not found"
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/api/ecom/order/create-order
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "orders": [
+        {
+            "productOrderedId": "691dadc15008f6a9092aacac",
+            "country": "egypt"
+        }
+    ]
+}
+HTTP/1.1 201 Created
+Date: Wed, 19 Nov 2025 11:45:06 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 123
+ETag: W/"7b-ixigRfV3E8O8qLvNWRS8WrJLsio"
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+
+{
+    "orders": [
+        "691dadc25008f6a9092aacb1"
+    ],
+    "productOrderId": [
+        "691dadc15008f6a9092aacac"
+    ],
+    "message": "Order Placed Successfully"
+}
+Request method:	DELETE
+Request URI:	https://rahulshettyacademy.com/api/ecom/order/delete-order/691dadc25008f6a9092aacb1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	orderId=691dadc25008f6a9092aacb1
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 19 Nov 2025 11:45:08 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 41
+ETag: W/"29-bffoZhIu2/PhrYGwacnOeGY9WaM"
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+
+{
+    "message": "Orders Deleted Successfully"
+}
+Request method:	DELETE
+Request URI:	https://rahulshettyacademy.com/api/ecom/product/delete-product/691dadc15008f6a9092aacac
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	productId=691dadc15008f6a9092aacac
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 19 Nov 2025 11:45:09 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 42
+ETag: W/"2a-2mOwR6FOFcYds+NaVy6wWIOyKCY"
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+
+{
+    "message": "Product Deleted Successfully"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/api/ecom/product/get-product-detail/691dadc15008f6a9092aacac
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	productId=691dadc15008f6a9092aacac
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Date: Wed, 19 Nov 2025 11:45:09 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 31
+ETag: W/"1f-Zkgaox/LmBaRs1Ofkuc8bu8COvo"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "message": "Product not found"
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/api/ecom/order/create-order
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "orders": [
+        {
+            "productOrderedId": "691dadc75008f6a9092aacbf",
+            "country": "egypt"
+        }
+    ]
+}
+HTTP/1.1 201 Created
+Date: Wed, 19 Nov 2025 11:45:12 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 123
+ETag: W/"7b-8DIHEo1VV0cPdGT1n+C0FAHuSIk"
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+
+{
+    "orders": [
+        "691dadc85008f6a9092aaccb"
+    ],
+    "productOrderId": [
+        "691dadc75008f6a9092aacbf"
+    ],
+    "message": "Order Placed Successfully"
+}
+Request method:	DELETE
+Request URI:	https://rahulshettyacademy.com/api/ecom/order/delete-order/691dadc85008f6a9092aaccb
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	orderId=691dadc85008f6a9092aaccb
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 19 Nov 2025 11:45:13 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 41
+ETag: W/"29-bffoZhIu2/PhrYGwacnOeGY9WaM"
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+
+{
+    "message": "Orders Deleted Successfully"
+}
+Request method:	DELETE
+Request URI:	https://rahulshettyacademy.com/api/ecom/product/delete-product/691dadc75008f6a9092aacbf
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	productId=691dadc75008f6a9092aacbf
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 19 Nov 2025 11:45:16 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 42
+ETag: W/"2a-2mOwR6FOFcYds+NaVy6wWIOyKCY"
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+
+{
+    "message": "Product Deleted Successfully"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/api/ecom/product/get-product-detail/691dadc75008f6a9092aacbf
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	productId=691dadc75008f6a9092aacbf
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Date: Wed, 19 Nov 2025 11:45:16 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 31
+ETag: W/"1f-Zkgaox/LmBaRs1Ofkuc8bu8COvo"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "message": "Product not found"
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/api/ecom/order/create-order
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "orders": [
+        {
+            "productOrderedId": "691dadce5008f6a9092aacea",
+            "country": "egypt"
+        }
+    ]
+}
+HTTP/1.1 201 Created
+Date: Wed, 19 Nov 2025 11:45:19 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 123
+ETag: W/"7b-N5wK30YbgJBlTdI/uqsKz3oOnAs"
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+
+{
+    "orders": [
+        "691dadcf5008f6a9092aacef"
+    ],
+    "productOrderId": [
+        "691dadce5008f6a9092aacea"
+    ],
+    "message": "Order Placed Successfully"
+}
+Request method:	DELETE
+Request URI:	https://rahulshettyacademy.com/api/ecom/order/delete-order/691dadcf5008f6a9092aacef
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	orderId=691dadcf5008f6a9092aacef
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 19 Nov 2025 11:45:20 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 41
+ETag: W/"29-bffoZhIu2/PhrYGwacnOeGY9WaM"
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+
+{
+    "message": "Orders Deleted Successfully"
+}
+Request method:	DELETE
+Request URI:	https://rahulshettyacademy.com/api/ecom/product/delete-product/691dadce5008f6a9092aacea
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	productId=691dadce5008f6a9092aacea
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 19 Nov 2025 11:45:21 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 42
+ETag: W/"2a-2mOwR6FOFcYds+NaVy6wWIOyKCY"
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+
+{
+    "message": "Product Deleted Successfully"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/api/ecom/product/get-product-detail/691dadce5008f6a9092aacea
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	productId=691dadce5008f6a9092aacea
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Date: Wed, 19 Nov 2025 11:45:22 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 31
+ETag: W/"1f-Zkgaox/LmBaRs1Ofkuc8bu8COvo"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "message": "Product not found"
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/api/ecom/order/create-order
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "orders": [
+        {
+            "productOrderedId": "56166151651655444",
+            "country": "egypt"
+        }
+    ]
+}
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:45:24 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 312
+ETag: W/"138-BKBj97p2/1hn0n/AwClFQA7v5ck"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"56166151651655444\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "56166151651655444",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"56166151651655444\" (type string) at path \"_id\" for model \"Product\""
+    }
+}
+Request method:	DELETE
+Request URI:	https://rahulshettyacademy.com/api/ecom/order/delete-order/55532325161215
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	orderId=55532325161215
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:45:24 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 301
+ETag: W/"12d-NOoyuD1eyICQWVg9ls47JgdJ/Ys"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"55532325161215\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "55532325161215",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"55532325161215\" (type string) at path \"_id\" for model \"Order\""
+    }
+}
+Request method:	DELETE
+Request URI:	https://rahulshettyacademy.com/api/ecom/product/delete-product/56166151651655444
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	productId=56166151651655444
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:45:25 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 312
+ETag: W/"138-BKBj97p2/1hn0n/AwClFQA7v5ck"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"56166151651655444\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "56166151651655444",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"56166151651655444\" (type string) at path \"_id\" for model \"Product\""
+    }
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/api/ecom/product/get-product-detail/56166151651655444
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	productId=56166151651655444
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:45:26 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 312
+ETag: W/"138-BKBj97p2/1hn0n/AwClFQA7v5ck"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"56166151651655444\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "56166151651655444",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"56166151651655444\" (type string) at path \"_id\" for model \"Product\""
+    }
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/api/ecom/order/create-order
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "orders": [
+        {
+            "productOrderedId": "56166151651655444",
+            "country": "egypt"
+        }
+    ]
+}
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:45:28 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 312
+ETag: W/"138-BKBj97p2/1hn0n/AwClFQA7v5ck"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"56166151651655444\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "56166151651655444",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"56166151651655444\" (type string) at path \"_id\" for model \"Product\""
+    }
+}
+Request method:	DELETE
+Request URI:	https://rahulshettyacademy.com/api/ecom/order/delete-order/55532325161215
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	orderId=55532325161215
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:45:28 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 301
+ETag: W/"12d-NOoyuD1eyICQWVg9ls47JgdJ/Ys"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"55532325161215\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "55532325161215",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"55532325161215\" (type string) at path \"_id\" for model \"Order\""
+    }
+}
+Request method:	DELETE
+Request URI:	https://rahulshettyacademy.com/api/ecom/product/delete-product/56166151651655444
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	productId=56166151651655444
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:45:29 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 312
+ETag: W/"138-BKBj97p2/1hn0n/AwClFQA7v5ck"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"56166151651655444\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "56166151651655444",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"56166151651655444\" (type string) at path \"_id\" for model \"Product\""
+    }
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/api/ecom/product/get-product-detail/56166151651655444
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	productId=56166151651655444
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:45:30 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 312
+ETag: W/"138-BKBj97p2/1hn0n/AwClFQA7v5ck"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"56166151651655444\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "56166151651655444",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"56166151651655444\" (type string) at path \"_id\" for model \"Product\""
+    }
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/api/ecom/order/create-order
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "orders": [
+        {
+            "productOrderedId": "56166151651655444",
+            "country": "egypt"
+        }
+    ]
+}
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:45:32 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 312
+ETag: W/"138-BKBj97p2/1hn0n/AwClFQA7v5ck"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"56166151651655444\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "56166151651655444",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"56166151651655444\" (type string) at path \"_id\" for model \"Product\""
+    }
+}
+Request method:	DELETE
+Request URI:	https://rahulshettyacademy.com/api/ecom/order/delete-order/55532325161215
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	orderId=55532325161215
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:45:32 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 301
+ETag: W/"12d-NOoyuD1eyICQWVg9ls47JgdJ/Ys"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"55532325161215\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "55532325161215",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"55532325161215\" (type string) at path \"_id\" for model \"Order\""
+    }
+}
+Request method:	DELETE
+Request URI:	https://rahulshettyacademy.com/api/ecom/product/delete-product/56166151651655444
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	productId=56166151651655444
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:45:33 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 312
+ETag: W/"138-BKBj97p2/1hn0n/AwClFQA7v5ck"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"56166151651655444\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "56166151651655444",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"56166151651655444\" (type string) at path \"_id\" for model \"Product\""
+    }
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/api/ecom/product/get-product-detail/56166151651655444
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	productId=56166151651655444
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:45:34 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 312
+ETag: W/"138-BKBj97p2/1hn0n/AwClFQA7v5ck"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"56166151651655444\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "56166151651655444",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"56166151651655444\" (type string) at path \"_id\" for model \"Product\""
+    }
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/api/ecom/order/create-order
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "orders": [
+        {
+            "productOrderedId": "56166151651655444",
+            "country": "egypt"
+        }
+    ]
+}
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:45:36 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 312
+ETag: W/"138-BKBj97p2/1hn0n/AwClFQA7v5ck"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"56166151651655444\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "56166151651655444",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"56166151651655444\" (type string) at path \"_id\" for model \"Product\""
+    }
+}
+Request method:	DELETE
+Request URI:	https://rahulshettyacademy.com/api/ecom/order/delete-order/55532325161215
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	orderId=55532325161215
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:45:36 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 301
+ETag: W/"12d-NOoyuD1eyICQWVg9ls47JgdJ/Ys"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"55532325161215\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "55532325161215",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"55532325161215\" (type string) at path \"_id\" for model \"Order\""
+    }
+}
+Request method:	DELETE
+Request URI:	https://rahulshettyacademy.com/api/ecom/product/delete-product/56166151651655444
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	productId=56166151651655444
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:45:37 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 312
+ETag: W/"138-BKBj97p2/1hn0n/AwClFQA7v5ck"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"56166151651655444\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "56166151651655444",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"56166151651655444\" (type string) at path \"_id\" for model \"Product\""
+    }
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/api/ecom/product/get-product-detail/56166151651655444
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	productId=56166151651655444
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:45:38 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 312
+ETag: W/"138-BKBj97p2/1hn0n/AwClFQA7v5ck"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"56166151651655444\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "56166151651655444",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"56166151651655444\" (type string) at path \"_id\" for model \"Product\""
+    }
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/api/ecom/order/create-order
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "orders": [
+        {
+            "productOrderedId": "56166151651655444",
+            "country": "egypt"
+        }
+    ]
+}
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:45:40 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 312
+ETag: W/"138-BKBj97p2/1hn0n/AwClFQA7v5ck"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"56166151651655444\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "56166151651655444",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"56166151651655444\" (type string) at path \"_id\" for model \"Product\""
+    }
+}
+Request method:	DELETE
+Request URI:	https://rahulshettyacademy.com/api/ecom/order/delete-order/55532325161215
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	orderId=55532325161215
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:45:40 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 301
+ETag: W/"12d-NOoyuD1eyICQWVg9ls47JgdJ/Ys"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"55532325161215\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "55532325161215",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"55532325161215\" (type string) at path \"_id\" for model \"Order\""
+    }
+}
+Request method:	DELETE
+Request URI:	https://rahulshettyacademy.com/api/ecom/product/delete-product/56166151651655444
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	productId=56166151651655444
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:45:41 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 312
+ETag: W/"138-BKBj97p2/1hn0n/AwClFQA7v5ck"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"56166151651655444\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "56166151651655444",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"56166151651655444\" (type string) at path \"_id\" for model \"Product\""
+    }
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/api/ecom/product/get-product-detail/56166151651655444
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	productId=56166151651655444
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:45:42 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 312
+ETag: W/"138-BKBj97p2/1hn0n/AwClFQA7v5ck"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"56166151651655444\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "56166151651655444",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"56166151651655444\" (type string) at path \"_id\" for model \"Product\""
+    }
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/api/ecom/order/create-order
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "orders": [
+        {
+            "productOrderedId": "56166151651655444",
+            "country": "egypt"
+        }
+    ]
+}
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:45:44 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 312
+ETag: W/"138-BKBj97p2/1hn0n/AwClFQA7v5ck"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"56166151651655444\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "56166151651655444",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"56166151651655444\" (type string) at path \"_id\" for model \"Product\""
+    }
+}
+Request method:	DELETE
+Request URI:	https://rahulshettyacademy.com/api/ecom/order/delete-order/55532325161215
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	orderId=55532325161215
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:45:44 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 301
+ETag: W/"12d-NOoyuD1eyICQWVg9ls47JgdJ/Ys"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"55532325161215\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "55532325161215",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"55532325161215\" (type string) at path \"_id\" for model \"Order\""
+    }
+}
+Request method:	DELETE
+Request URI:	https://rahulshettyacademy.com/api/ecom/product/delete-product/56166151651655444
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	productId=56166151651655444
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:45:45 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 312
+ETag: W/"138-BKBj97p2/1hn0n/AwClFQA7v5ck"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"56166151651655444\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "56166151651655444",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"56166151651655444\" (type string) at path \"_id\" for model \"Product\""
+    }
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/api/ecom/product/get-product-detail/56166151651655444
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	productId=56166151651655444
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:45:46 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 312
+ETag: W/"138-BKBj97p2/1hn0n/AwClFQA7v5ck"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"56166151651655444\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "56166151651655444",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"56166151651655444\" (type string) at path \"_id\" for model \"Product\""
+    }
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/api/ecom/order/create-order
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "orders": [
+        {
+            "productOrderedId": "56166151651655444",
+            "country": "egypt"
+        }
+    ]
+}
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:45:48 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 312
+ETag: W/"138-BKBj97p2/1hn0n/AwClFQA7v5ck"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"56166151651655444\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "56166151651655444",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"56166151651655444\" (type string) at path \"_id\" for model \"Product\""
+    }
+}
+Request method:	DELETE
+Request URI:	https://rahulshettyacademy.com/api/ecom/order/delete-order/55532325161215
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	orderId=55532325161215
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:45:48 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 301
+ETag: W/"12d-NOoyuD1eyICQWVg9ls47JgdJ/Ys"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"55532325161215\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "55532325161215",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"55532325161215\" (type string) at path \"_id\" for model \"Order\""
+    }
+}
+Request method:	DELETE
+Request URI:	https://rahulshettyacademy.com/api/ecom/product/delete-product/56166151651655444
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	productId=56166151651655444
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:45:49 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 312
+ETag: W/"138-BKBj97p2/1hn0n/AwClFQA7v5ck"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"56166151651655444\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "56166151651655444",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"56166151651655444\" (type string) at path \"_id\" for model \"Product\""
+    }
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/api/ecom/product/get-product-detail/56166151651655444
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	productId=56166151651655444
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:45:50 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 312
+ETag: W/"138-BKBj97p2/1hn0n/AwClFQA7v5ck"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"56166151651655444\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "56166151651655444",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"56166151651655444\" (type string) at path \"_id\" for model \"Product\""
+    }
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/api/ecom/order/create-order
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "orders": [
+        {
+            "productOrderedId": "56166151651655444",
+            "country": "egypt"
+        }
+    ]
+}
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:45:56 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 312
+ETag: W/"138-BKBj97p2/1hn0n/AwClFQA7v5ck"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"56166151651655444\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "56166151651655444",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"56166151651655444\" (type string) at path \"_id\" for model \"Product\""
+    }
+}
+Request method:	DELETE
+Request URI:	https://rahulshettyacademy.com/api/ecom/order/delete-order/55532325161215
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	orderId=55532325161215
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:45:57 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 301
+ETag: W/"12d-NOoyuD1eyICQWVg9ls47JgdJ/Ys"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"55532325161215\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "55532325161215",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"55532325161215\" (type string) at path \"_id\" for model \"Order\""
+    }
+}
+Request method:	DELETE
+Request URI:	https://rahulshettyacademy.com/api/ecom/product/delete-product/56166151651655444
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	productId=56166151651655444
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:45:58 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 312
+ETag: W/"138-BKBj97p2/1hn0n/AwClFQA7v5ck"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"56166151651655444\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "56166151651655444",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"56166151651655444\" (type string) at path \"_id\" for model \"Product\""
+    }
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/api/ecom/product/get-product-detail/56166151651655444
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	productId=56166151651655444
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:45:58 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 312
+ETag: W/"138-BKBj97p2/1hn0n/AwClFQA7v5ck"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"56166151651655444\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "56166151651655444",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"56166151651655444\" (type string) at path \"_id\" for model \"Product\""
+    }
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/api/ecom/order/create-order
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "orders": [
+        {
+            "productOrderedId": "56166151651655444",
+            "country": "egypt"
+        }
+    ]
+}
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:46:00 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 312
+ETag: W/"138-BKBj97p2/1hn0n/AwClFQA7v5ck"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"56166151651655444\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "56166151651655444",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"56166151651655444\" (type string) at path \"_id\" for model \"Product\""
+    }
+}
+Request method:	DELETE
+Request URI:	https://rahulshettyacademy.com/api/ecom/order/delete-order/55532325161215
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	orderId=55532325161215
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:46:01 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 301
+ETag: W/"12d-NOoyuD1eyICQWVg9ls47JgdJ/Ys"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"55532325161215\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "55532325161215",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"55532325161215\" (type string) at path \"_id\" for model \"Order\""
+    }
+}
+Request method:	DELETE
+Request URI:	https://rahulshettyacademy.com/api/ecom/product/delete-product/56166151651655444
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	productId=56166151651655444
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:46:02 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 312
+ETag: W/"138-BKBj97p2/1hn0n/AwClFQA7v5ck"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"56166151651655444\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "56166151651655444",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"56166151651655444\" (type string) at path \"_id\" for model \"Product\""
+    }
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/api/ecom/product/get-product-detail/56166151651655444
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	productId=56166151651655444
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGZkZDFkNWY2NjlkNmNiMGEyY2E3NDEiLCJ1c2VyRW1haWwiOiJtb2hlYmFzaHJhZjQ2QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjEwMjAyNzQ4MDMsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjM1NTI2OTcsImV4cCI6MTc5NTExMDI5N30.SDS3M8EygnNEjfm7R3JKAAyKOHSqR58OBuQKFvU5VOA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 500 Internal Server Error
+Date: Wed, 19 Nov 2025 11:46:02 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 312
+ETag: W/"138-BKBj97p2/1hn0n/AwClFQA7v5ck"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "type": "Something Went Wrong",
+    "message": {
+        "stringValue": "\"56166151651655444\"",
+        "valueType": "string",
+        "kind": "ObjectId",
+        "value": "56166151651655444",
+        "path": "_id",
+        "reason": {
+            
+        },
+        "name": "CastError",
+        "message": "Cast to ObjectId failed for value \"56166151651655444\" (type string) at path \"_id\" for model \"Product\""
+    }
+}
