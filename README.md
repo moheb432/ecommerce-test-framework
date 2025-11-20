@@ -34,5 +34,65 @@ on runing more than 14 iteration on the 25 testcase written above it was noticed
 <img width="1185" height="630" alt="image" src="https://github.com/user-attachments/assets/a837312d-37a5-4492-9f05-fae783156f0f" />
 
 # Testing automation RestAssurewd BDD Framework : gerkhen language 
+API Testing Framework Summary (REST Assured + BDD)
+
+This project automates testing for an e-commerce API using REST Assured, Java, and Cucumber (BDD). The framework validates major flows including login, product creation, and order placement.
+
+🔐 Login API
+
+Purpose: Authenticate users and generate a token for subsequent requests.
+Covers:
+
+Successful and failed logins
+
+Missing/invalid fields
+
+Invalid email formats
+
+Status code and response validation
+
+👜 Add Product API
+
+Purpose: Add a new product using a valid user token.
+Covers:
+
+Successful product creation
+
+Invalid or missing fields
+
+Incorrect data formats
+
+Overlength and special character handling
+
+Authorization validation
+
+Response body checks
+
+📦 Add Order API
+
+Purpose: Create a customer order using an existing product ID.
+Covers:
+
+Successful order creation
+
+Invalid or missing product IDs
+
+Missing/invalid authentication
+
+Payload validation
+
+Status code and body verification
+
+✔ Framework Highlights
+
+BDD with Cucumber for readable Gherkin scenarios
+
+REST Assured for request/response validation
+
+Data-driven testing using Examples and external test data
+
+Reusable utilities and DTOs for cleaner code
+
+Chained E2E workflow:
 
 
