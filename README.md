@@ -185,8 +185,7 @@ Observed issues:
 | DeleteAddedOrder     | 1000                  | 	4.17secs     | 62.22    |
 | DeleteAddedProduct   | 940                  | 3.2secs        | 54.24    |
 
-
-<img width="600" height="337" alt="image" src="https://github.com/user-attachments/assets/aebf5b58-2ab3-4289-a172-7bfe9e3bab91" />
+<img width="940" height="337" alt="image" src="https://github.com/user-attachments/assets/693d8d01-76c5-4481-af55-ffce187395ab" />
 
 
 ## ✨ Framework Highlights
