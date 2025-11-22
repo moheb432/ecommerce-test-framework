@@ -129,8 +129,7 @@ Observed issues:
 - **Users:** 20
 - **Iterations:** 10
 - **Ramp-up:** 10 seconds
-
-## Test Results
+- **duration assertion:** 1.5 seconds
 
 | Request Name         | Avg Response Time (ms) | Throughput | Error % |
 |---------------------|----------------------|------------|---------|
