@@ -126,12 +126,20 @@ Observed issues:
 ---
 ## Preformance Tesrting Jmeter 
 ### load test 
-  done on no of users 20 iterations 10 and ramptime 10secs   
-| Requests  | Average response time |errors      |Throughhout                   | Severity |
-| ------- | ----------------------------------------------- | ------------------- | ----------------------- | -------- |
-| Login | 2500| 0% | API accepts -500        | High     |
-| create product | 1500| 0% | API accepts empty value | Medium   |
-| place an order  | 1500` | 0%  | API accepts @Fashion!   | Medium   |
+- **Users:** 20
+- **Iterations:** 10
+- **Ramp-up:** 10 seconds
+
+## Test Results
+
+| Request Name         | Avg Response Time (ms) | Throughput | Error % |
+|---------------------|----------------------|------------|---------|
+| tLoginRequest        | 991                  | 4secs     | 23    |
+| Createnewproduct     | 1232                 | 4secs        | 60    |
+| createorderrequest   | 460                  | 4secs     | 2.7    |
+| DeleteAddedOrder     | 416                  | 4secs     | 6    |
+| DeleteAddedProduct   | 399                  | 4secs        | 20    |
+
 
 
 
