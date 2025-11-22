@@ -186,7 +186,7 @@ Observed issues:
 | DeleteAddedProduct   | 940                  | 3.2secs        | 54.24    |
 
 
-<img width="400" height="337" alt="image" src="https://github.com/user-attachments/assets/aebf5b58-2ab3-4289-a172-7bfe9e3bab91" />
+<img width="600" height="337" alt="image" src="https://github.com/user-attachments/assets/aebf5b58-2ab3-4289-a172-7bfe9e3bab91" />
 
 
 ## ✨ Framework Highlights
