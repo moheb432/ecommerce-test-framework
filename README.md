@@ -124,6 +124,17 @@ Observed issues:
 * Unauthorized access
 
 ---
+## Preformance Tesrting Jmeter 
+### load test 
+  done on no of users 20 iterations 10 and ramptime 10secs   
+| Requests  | Average response time |errors      |Throughhout                   | Severity |
+| ------- | ----------------------------------------------- | ------------------- | ----------------------- | -------- |
+| Login | 2500| 0% | API accepts -500        | High     |
+| create product | 1500| 0% | API accepts empty value | Medium   |
+| place an order  | 1500` | 0%  | API accepts @Fashion!   | Medium   |
+
+
+
 
 ## ✨ Framework Highlights
 
