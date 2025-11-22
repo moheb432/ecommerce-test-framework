@@ -162,13 +162,7 @@ Observed issues:
 # Ramp-Up Test
 
 > A **ramp-up test** is a type of load testing where the number of users is **gradually increased over time** instead of starting all users at once. This helps identify **performance > bottlenecks** before the system is overwhelmed.
-
----
-
-## 1. What is Ramp-Up
-- **Ramp-up period** = time to start all virtual users.  
 - Formula:
-
 \[
 \text{Ramp-up delay per user} = \frac{\text{Ramp-up time}}{\text{Number of users}}
 \]
