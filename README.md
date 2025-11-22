@@ -186,8 +186,10 @@ Observed issues:
 | DeleteAddedProduct   | 940                  | 3.2secs        | 54.24    |
 
 <img  width="713" height="343" alt="image" src="https://github.com/user-attachments/assets/182dc0ec-4b47-4a84-8d31-3920fa320396" />
-## ✨ Framework Highlights
 
+
+
+## ✨ Framework Highlights
 * **Cucumber BDD** for readable test scripts
 * **REST Assured** for robust API interaction
 * **DTO mapping using Jackson**
