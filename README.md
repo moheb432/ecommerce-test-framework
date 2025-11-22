@@ -138,9 +138,8 @@ Observed issues:
 | createorderrequest   | 460                  | 4secs     | 2.7    |
 | DeleteAddedOrder     | 416                  | 4secs     | 6    |
 | DeleteAddedProduct   | 399                  | 4secs        | 20    |
-```text
-**2. Blockquotes:**
-Login requests : 20 users, 1 iteration, 10s ramp-up → 50% errors
+
+```Login requests : 20 users, 1 iteration, 10s ramp-up → 50% errors
 on 1500 ms max response assertion → failed for >5 users
 So even light load breaks the SLA (Service Level Agreement) of 1.5s response.
 
