@@ -186,6 +186,7 @@ Observed issues:
 | DeleteAddedProduct   | 940                  | 3.2secs        | 54.24    |
 
 <img width="940" height="337" alt="image" src="https://github.com/user-attachments/assets/182dc0ec-4b47-4a84-8d31-3920fa320396" />
+
 > all of requests gives error 400 bad request
 
 ## ✨ Framework Highlights
