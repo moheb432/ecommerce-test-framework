@@ -133,17 +133,45 @@ Observed issues:
 
 | Request Name         | Avg Response Time (ms) | Throughput | Error % |
 |---------------------|----------------------|------------|---------|
-| tLoginRequest        | 991                  | 4secs     | 23    |
-| Createnewproduct     | 1232                 | 4secs        | 60    |
-| createorderrequest   | 460                  | 4secs     | 2.7    |
-| DeleteAddedOrder     | 416                  | 4secs     | 6    |
-| DeleteAddedProduct   | 399                  | 4secs        | 20    |
+| tLoginRequest        | 991                  | 5secs     | 45.5    |
+| Createnewproduct     | 1232                 | 4secs        | 18    |
+| createorderrequest   | 460                  | 5secs     | 0    |
+| DeleteAddedOrder     | 416                  | 5secs     | 2.5    |
+| DeleteAddedProduct   | 399                  | 5secs        | 22    |
 
 > Login requests : 20 users, 1 iteration, 10s ramp-up → 50% errors
 > on 1500 ms max response assertion → failed for >5 users
 > So even light load breaks the SLA (Service Level Agreement) of 1.5s response.
 
 
+### Stress test 
+- **Users:** 50
+- **Iterations:** 10
+- **Ramp-up:** 20 seconds
+- **duration assertion:** 1.5 seconds
+
+| Request Name         | Avg Response Time (ms) | Throughput | Error % |
+|---------------------|----------------------|------------|---------|
+| tLoginRequest        | 1872                  | 3.2secs     | 28    |
+| Createnewproduct     | 2674                 | 3.2secs        | 70    |
+| createorderrequest   | 1000                  | 3.2secs     | 8    |
+| DeleteAddedOrder     | 1000                  | 3.2secs     | 23    |
+| DeleteAddedProduct   | 940                  | 3.2secs        | 29    |
+
+## Ramp up test 
+# Ramp-Up Test
+
+> A **ramp-up test** is a type of load testing where the number of users is **gradually increased over time** instead of starting all users at once. This helps identify **performance > bottlenecks** before the system is overwhelmed.
+
+---
+
+## 1. What is Ramp-Up
+- **Ramp-up period** = time to start all virtual users.  
+- Formula:
+
+\[
+\text{Ramp-up delay per user} = \frac{\text{Ramp-up time}}{\text{Number of users}}
+\]
 
 ## ✨ Framework Highlights
 
