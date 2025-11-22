@@ -150,8 +150,6 @@ Observed issues:
 - **Ramp-up:** 20 seconds
 - **duration assertion:** 1.5 seconds
 > for more info about the stress test please check this pdf : [Uploading index.html…]()
-<img width="713" height="343" alt="image" src="https://github.com/user-attachments/assets/9beb2b25-248f-44bc-8ef1-0aed559186f3" />
-<img width="1168" height="495" alt="image" src="https://github.com/user-attachments/assets/753ef1f1-3044-47a4-90a9-46583838fe75" />
 
 
 | Request Name         | Avg Response Time (ms) | Throughput | Error % |
@@ -162,12 +160,30 @@ Observed issues:
 | DeleteAddedOrder     | 1000                  | 3.2secs     | 23    |
 | DeleteAddedProduct   | 940                  | 3.2secs        | 29    |
 
+<img width="713" height="343" alt="image" src="https://github.com/user-attachments/assets/9beb2b25-248f-44bc-8ef1-0aed559186f3" />
+
+<img width="1168" height="495" alt="image" src="https://github.com/user-attachments/assets/753ef1f1-3044-47a4-90a9-46583838fe75" />
+
 ## Ramp up test 
 # Ramp-Up Test
 
-> A **ramp-up test** is a type of load testing where the number of users is **gradually increased over time** instead of starting all users at once. This helps identify **performance > bottlenecks** before the system is overwhelmed.
-> 
-> ramp up delay= rampuptime / no of users
+**Steps:**
+1. Test Plan → Add → Threads (Users) → Concurrency Thread Group
+2. Configure:
+   - **Target Concurrency**: Desired number of users 100
+   - **Ramp-Up Time**: Time to reach that number 60 secs
+   - **Ramp-Up Steps**: How many increments to increase through 20
+   - **Hold Target Rate Time**: Duration to keep max load 60 secs
+   
+
+
+| Request Name         | Avg Response Time (ms) | Throughput | Error % |
+|---------------------|----------------------|------------|---------|
+| tLoginRequest        | 1872                  | 4.55secs     | 74.42    |
+| Createnewproduct     | 2674                 | 4.29	secs        | 89.52    |
+| createorderrequest   | 1000                  | 4.25secs     | 52.05    |
+| DeleteAddedOrder     | 1000                  | 	4.17secs     | 62.22    |
+| DeleteAddedProduct   | 940                  | 3.2secs        | 54.24    |
 
 ## ✨ Framework Highlights
 
