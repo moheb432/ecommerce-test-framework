@@ -151,7 +151,7 @@ Observed issues:
 - **duration assertion:** 1.5 seconds
 > for more info about the stress test please check this pdf : [Uploading index.html…]()
 <img width="713" height="343" alt="image" src="https://github.com/user-attachments/assets/9beb2b25-248f-44bc-8ef1-0aed559186f3" />
-<img width="1186" height="450" alt="image" src="https://github.com/user-attachments/assets/0f7598ae-0057-4398-93fa-471e7ced6250" />
+<img width="1168" height="495" alt="image" src="https://github.com/user-attachments/assets/753ef1f1-3044-47a4-90a9-46583838fe75" />
 
 
 | Request Name         | Avg Response Time (ms) | Throughput | Error % |
