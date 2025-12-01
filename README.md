@@ -162,7 +162,7 @@ Observed issues:
 
 <img width="713" height="343" alt="image" src="https://github.com/user-attachments/assets/9beb2b25-248f-44bc-8ef1-0aed559186f3" />
 
-<img width="1168" height="495" alt="image" src="https://github.com/user-attachments/assets/753ef1f1-3044-47a4-90a9-46583838fe75" />
+<img img width="713" height="343" alt="image" src="https://github.com/user-attachments/assets/753ef1f1-3044-47a4-90a9-46583838fe75" />
 
 
  
