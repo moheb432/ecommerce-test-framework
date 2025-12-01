@@ -57,9 +57,9 @@ This repository includes:
 
 # 📊 Execution Summary
 
-* **26 Total Test Cases**
-* **18 Passed**
-* **8 Failed**
+* **35 Total Test Cases**
+* **25 Passed**
+* **10 Failed**
 
 ### 🔎 Defects Identified
 
