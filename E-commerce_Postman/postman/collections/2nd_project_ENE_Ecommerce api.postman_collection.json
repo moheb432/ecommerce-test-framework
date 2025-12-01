@@ -1,0 +1,674 @@
+{
+  "info": {
+    "_postman_id": "19a02ba8-7106-4b3b-9743-58b7b99d5d4a",
+    "name": "2nd_project_ENE_Ecommerce api",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "49088246"
+  },
+  "item": [
+    {
+      "name": "Login to the website Ecommerce",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "9970f7bf-e8cc-45ad-81da-5f8dfd28e006",
+            "exec": [
+              "// Check status code using collection variable\r",
+              "let expected = Number(pm.collectionVariables.get(\"SC_Login\") || pm.iterationData.get(\"SC_Login\"));\r",
+              "\r",
+              "pm.test(\"Status code is as expected\", function () {\r",
+              "    pm.expect(pm.response.code).to.eql(expected);\r",
+              "});\r",
+              "// Use numeric check for conditional logic\r",
+              "if (pm.response.code === 200) {\r",
+              "    var response = pm.response.json();\r",
+              "\r",
+              "    // Check if response contains required properties\r",
+              "    pm.test(\"Response should contain token, userId, and message\", function () {\r",
+              "        pm.expect(response).to.have.property('token');\r",
+              "        pm.expect(response).to.have.property('userId');\r",
+              "        pm.expect(response).to.have.property('message');\r",
+              "    });\r",
+              "\r",
+              "    // Check if message is correct\r",
+              "    pm.test(\"Message should be 'Login Successfully'\", function () {\r",
+              "        pm.expect(response.message).to.eql(\"Login Successfully\");\r",
+              "    });\r",
+              "\r",
+              "    // Save token and userId to collection variables\r",
+              "    pm.collectionVariables.set(\"token\", response.token);\r",
+              "    pm.collectionVariables.set(\"userId\", response.userId);\r",
+              "}\r",
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "id": "93547cb3-b648-4494-995f-d020e45a48b0",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"userEmail\": \"{{email}}\",\r\n    \"userPassword\": \"{{password}}\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{BaseUrl_Ecom}}/auth/login",
+          "host": [
+            "{{BaseUrl_Ecom}}"
+          ],
+          "path": [
+            "auth",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "create new product",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "37b745d9-fd3c-4cca-86c0-207aec4e12dd",
+            "exec": [
+              "let expected = Number(pm.collectionVariables.get(\"SC_Addproduct\") || pm.iterationData.get(\"SC_Addproduct\"));\r",
+              "\r",
+              "pm.test(\"Status code is as expected\", function () {\r",
+              "    pm.expect(pm.response.code).to.eql(expected);\r",
+              "});\r",
+              "// Use numeric check for conditional logic\r",
+              "if (pm.response.code === 201) {\r",
+              "\r",
+              "pm.test(\"contain productid\"),function(){\r",
+              "    pm.response.to.have.jsonBody('productId');\r",
+              "    pm.response.to.have.jsonBody('message');\r",
+              "\r",
+              "}\r",
+              "pm.test(\"message is product Added successfully\"),function(){\r",
+              "    pm.expect(pm.response.json().message).to.eql('Product Added Successfully');\r",
+              "}\r",
+              "pm.collectionVariables.set(\"productId\", pm.response.json().productId);\r",
+              "}"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        },
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "1cffee84-77d4-40d4-8cf7-25acd4945c0c",
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "id": "08ea2862-c31f-41b7-853d-2a38b9a36efd",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "{{token}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "productName",
+              "value": "{{productname}}",
+              "type": "text"
+            },
+            {
+              "key": "productAddedBy",
+              "value": "{{userId}}",
+              "type": "text"
+            },
+            {
+              "key": "productCategory",
+              "value": "{{ProductCategory}}",
+              "type": "text"
+            },
+            {
+              "key": "productSubCategory",
+              "value": "shirts",
+              "type": "text"
+            },
+            {
+              "key": "productPrice",
+              "value": "{{ProductPrice}}",
+              "type": "text"
+            },
+            {
+              "key": "productDescription",
+              "value": "none",
+              "type": "text"
+            },
+            {
+              "key": "productFor",
+              "value": "{{ProductFor}}",
+              "type": "text"
+            },
+            {
+              "key": "productImage",
+              "type": "file",
+              "src": "postman-cloud:///1f0add53-008f-4ca0-bf07-3d857812db2a"
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{BaseUrl_Ecom}}/product/add-product",
+          "host": [
+            "{{BaseUrl_Ecom}}"
+          ],
+          "path": [
+            "product",
+            "add-product"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "place an order",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "37b745d9-fd3c-4cca-86c0-207aec4e12dd",
+            "exec": [
+              "let expected = Number(pm.collectionVariables.get(\"SC_Addorder\") || pm.iterationData.get(\"SC_Addorder\"));",
+              "",
+              "pm.test(\"Status code is as expected\", function () {",
+              "    pm.expect(pm.response.code).to.eql(expected);",
+              "});",
+              "// Use numeric check for conditional logic",
+              "if (pm.response.code === 201) {",
+              "pm.test(\"message is Order Placed Successfully\"),function(){",
+              "    pm.expect(pm.response.json().message).to.eql(\"Order Placed Successfully\");",
+              "}",
+              "pm.collectionVariables.set(\"orderId\", pm.response.json().orders[0]);",
+              "console.log(pm.collectionVariables.get(\"orderId\"))",
+              "}"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "id": "383619b7-9008-474b-aabc-cf6a9f05ee30",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "{{token}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"orders\":[\r\n        {\r\n        \"country\":\"{{counrty}}\",\r\n        \"productOrderedId\": \"{{productId}}\"\r\n        }\r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{BaseUrl_Ecom}}/order/create-order",
+          "host": [
+            "{{BaseUrl_Ecom}}"
+          ],
+          "path": [
+            "order",
+            "create-order"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "check on placed order",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "37b745d9-fd3c-4cca-86c0-207aec4e12dd",
+            "exec": [
+              "// Check status code using collection variable\r",
+              "let expected = Number(pm.collectionVariables.get(\"SC_getorder\") || pm.iterationData.get(\"SC_getorder\"));\r",
+              "\r",
+              "pm.test(\"Status code is as expected\", function () {\r",
+              "    pm.expect(pm.response.code).to.eql(expected);\r",
+              "});\r",
+              "\r",
+              "// Use numeric check for conditional logic\r",
+              "if (pm.response.code === 200) {\r",
+              "pm.test(\"contain productid\"),function(){\r",
+              "    pm.response.to.have.jsonBody('_id');\r",
+              "    pm.response.to.have.jsonBody('message');\r",
+              "\r",
+              "}\r",
+              "pm.test(\"Orders fetched for customer Successfully\"),function(){\r",
+              "    pm.expect(pm.response.json().message).to.eql('Orders fetched for customer Successfully');\r",
+              "}\r",
+              "}"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "id": "d44c65f9-73c0-4e09-939f-01684bbece9f",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "{{token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{BaseUrl_Ecom}}/order/get-orders-details?id={{orderId}}",
+          "host": [
+            "{{BaseUrl_Ecom}}"
+          ],
+          "path": [
+            "order",
+            "get-orders-details"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "{{orderId}}"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete the order",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "37b745d9-fd3c-4cca-86c0-207aec4e12dd",
+            "exec": [
+              "// Check status code using collection variable\r",
+              "let expected = Number(pm.collectionVariables.get(\"SC_Deleteorder\") || pm.iterationData.get(\"SC_Deleteorder\"));\r",
+              "\r",
+              "pm.test(\"Status code is as expected\", function () {\r",
+              "    pm.expect(pm.response.code).to.eql(expected);\r",
+              "});\r",
+              "// Use numeric check for conditional logic\r",
+              "if (pm.response.code === 200) {\r",
+              "    pm.test(\"contain message\"),function(){\r",
+              "    pm.response.to.have.jsonBody('message');\r",
+              "\r",
+              "}\r",
+              "pm.test(\"message is Orders Added successfully\"),function(){\r",
+              "    pm.expect(pm.response.json().message).to.eql('Orders Deleted Successfully');\r",
+              "    }\r",
+              "}"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "id": "33da1821-b179-4ac8-bdb5-f1a4ad60191d",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "{{token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{BaseUrl_Ecom}}/order/delete-order/{{orderId}}",
+          "host": [
+            "{{BaseUrl_Ecom}}"
+          ],
+          "path": [
+            "order",
+            "delete-order",
+            "{{orderId}}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "check on placed order Copy",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "37b745d9-fd3c-4cca-86c0-207aec4e12dd",
+            "exec": [
+              "pm.test(\"Status code is as expected\", function () {\r",
+              "    pm.expect(pm.response.code).to.eql(400);\r",
+              "});\r",
+              "pm.test(\"contain productid\"),function(){\r",
+              "\r",
+              "    pm.response.to.have.jsonBody('message');\r",
+              "\r",
+              "}\r",
+              "pm.test(\"Order not found\"),function(){\r",
+              "    pm.expect(pm.response.json().message).to.eql('Order not found');\r",
+              "}"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "id": "25604040-8a8b-42df-aa15-f3fc7c4cadf8",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "{{token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{BaseUrl_Ecom}}/order/get-orders-details?id={{orderId}}",
+          "host": [
+            "{{BaseUrl_Ecom}}"
+          ],
+          "path": [
+            "order",
+            "get-orders-details"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "{{orderId}}"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete_new product",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "37b745d9-fd3c-4cca-86c0-207aec4e12dd",
+            "exec": [
+              "let expected = Number(pm.collectionVariables.get(\"SC_Deleteproduct\") || pm.iterationData.get(\"SC_Deleteproduct\"));\r",
+              "\r",
+              "pm.test(\"Status code is as expected\", function () {\r",
+              "    pm.expect(pm.response.code).to.eql(expected);\r",
+              "});\r",
+              "if (pm.response.code === 200) {\r",
+              "    pm.test(\"contain message\"),function(){\r",
+              "    pm.response.to.have.jsonBody('message');\r",
+              "\r",
+              "}\r",
+              "pm.test(\"message is product Added successfully\"),function(){\r",
+              "    pm.expect(pm.response.json().message).to.eql('Product Deleted Successfully');\r",
+              "}}"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        },
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "d486f719-8389-468d-9a21-002bd53442ed",
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "id": "5bf1810a-2543-4bca-a4c3-b90f8068886a",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "{{token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{BaseUrl_Ecom}}/product/delete-product/{{productId}}",
+          "host": [
+            "{{BaseUrl_Ecom}}"
+          ],
+          "path": [
+            "product",
+            "delete-product",
+            "{{productId}}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "check on deleted product",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "37b745d9-fd3c-4cca-86c0-207aec4e12dd",
+            "exec": [
+              "pm.test(\"Status code is 400\", function () {\r",
+              "    pm.response.to.have.status(400);\r",
+              "});\r",
+              "pm.test(\"contain productid\"),function(){\r",
+              "\r",
+              "    pm.response.to.have.jsonBody('message');\r",
+              "\r",
+              "}\r",
+              "pm.test(\"Order not found\"),function(){\r",
+              "    pm.expect(pm.response.json().message).to.eql('Order not found');\r",
+              "}"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "id": "335b752b-7617-4080-ad3c-e7a4136b17fb",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "{{token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{BaseUrl_Ecom}}/order/get-orders-details?id={{orderId}}",
+          "host": [
+            "{{BaseUrl_Ecom}}"
+          ],
+          "path": [
+            "order",
+            "get-orders-details"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "{{orderId}}"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "7f01ab2c-7704-44aa-a240-2fdf6316883f",
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "34742e2b-42f7-4873-8d44-e26d5d83e9df",
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          "pm.test(\"Response time is less than 1000ms\", function () {\r",
+          "    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+          "});"
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "id": "724b7a10-340b-4056-b041-e87db14fc7ec",
+      "key": "BaseUrl_Ecom",
+      "value": ""
+    },
+    {
+      "id": "5f5b00da-8989-409c-a662-5aaeb6706b25",
+      "key": "token",
+      "value": ""
+    },
+    {
+      "id": "7a1a699b-8152-4c53-9637-d0a43104bc9a",
+      "key": "userId",
+      "value": ""
+    },
+    {
+      "id": "9962a81d-5389-4576-8941-7cfe81a7716f",
+      "key": "productId",
+      "value": ""
+    },
+    {
+      "id": "40f8a96a-5055-477d-9716-569e6c70fe79",
+      "key": "orderId",
+      "value": ""
+    },
+    {
+      "id": "5a4437e6-7850-45c2-8410-9b1e577000aa",
+      "key": "email",
+      "value": ""
+    },
+    {
+      "id": "cf1d19af-8f0b-48f4-9ec4-2a2569c2a3a6",
+      "key": "password",
+      "value": ""
+    },
+    {
+      "id": "3beaa68b-95f0-4e27-8e57-02e9bcdb6bf2",
+      "key": "productname",
+      "value": ""
+    },
+    {
+      "id": "54f440b8-b2e5-4c01-9c4a-5cf8d9263e73",
+      "key": "ProductCategory",
+      "value": ""
+    },
+    {
+      "id": "701caf83-016c-4aed-97f0-1fd4ddbc0a63",
+      "key": "ProductPrice",
+      "value": ""
+    },
+    {
+      "id": "7b79d1bf-9467-48c3-990c-45e5c0bed928",
+      "key": "ProductFor",
+      "value": ""
+    },
+    {
+      "id": "e6dac509-cc81-43d7-ac9b-46e2d3765a95",
+      "key": "SC_Login",
+      "value": ""
+    },
+    {
+      "id": "2ba54c78-605a-411e-a99f-9960870b1be0",
+      "key": "SC_Addproduct",
+      "value": ""
+    },
+    {
+      "id": "b4d8b4eb-f506-42f4-868c-cb570263defd",
+      "key": "SC_Addorder",
+      "value": ""
+    },
+    {
+      "id": "7367e555-6850-428d-b35d-a5eccf5d093a",
+      "key": "SC_getorder",
+      "value": ""
+    },
+    {
+      "id": "699e369e-252b-4430-aa56-d0e691a1604d",
+      "key": "SC_Deleteorder",
+      "value": ""
+    },
+    {
+      "id": "ccfa1230-f763-4954-bf4f-dce0af026a75",
+      "key": "SC_Deleteproduct",
+      "value": ""
+    },
+    {
+      "id": "5a80fcc9-a340-4b51-a742-1f40d2dfb0ac",
+      "key": "counrty",
+      "value": ""
+    }
+  ]
+}
