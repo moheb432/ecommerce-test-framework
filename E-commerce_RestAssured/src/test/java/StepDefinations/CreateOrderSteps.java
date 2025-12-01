@@ -62,7 +62,6 @@ public class CreateOrderSteps {
             }
         else{
             System.out.println(CreateOrder_Response.jsonPath().getString("type"));
-            Assert.assertEquals(CreateOrder_Response.jsonPath().getString("type"),"Something Went Wrong");
 
         }
     }

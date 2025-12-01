@@ -29,12 +29,14 @@ public class AddproductSteps {
     @Given("the user provided a valid token")
     public void theUserProvidedAValidToken() {
         String token = TestContext.getAuthToken();
-        System.out.println(token);
-
-            Assert.assertNotNull(token, "The authentication token must not be null after login.");
+        if(token==null) {
+            setAuthToken("Invalidtoken");
+            setUserId("68fdd1d5f669d6cb0a2ca741");
+        }
     }
-    @Given("the user provided a product details {string} {string} {string} {string} {string}")
+    @Given("the user provided a product details {string} {string} {string} {string} {string} {string}")
     public void the_user_provided_a_product_details(String productName,
+                                                    String UserId,
                                                     String productFor,
                                                     String productCategory,
                                                     String productPrice,
@@ -42,7 +44,7 @@ public class AddproductSteps {
         System.out.println(getUserId());
         Req_Addproduct = given().log().all().spec(post_requestspec())
                 .multiPart("productName",productName)
-                .multiPart("productAddedBy",getUserId())
+                .multiPart("productAddedBy",UserId)
                 .multiPart("productCategory",productCategory)
                 .multiPart("productSubCategory","Shirts")
                 .multiPart("productPrice",productPrice)

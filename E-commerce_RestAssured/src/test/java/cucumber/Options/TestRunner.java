@@ -5,7 +5,11 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features ="src/test/resource/features",glue = {"StepDefinations"},plugin = {"pretty"})
+@CucumberOptions(features ="src/test/resource/features",
+        tags="@smokers3",
+        glue = {"StepDefinations"},
+        plugin = {"pretty","html:target/reports/report3.html"})
+
 public class TestRunner {
 
 }
