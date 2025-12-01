@@ -164,7 +164,6 @@ Observed issues:
 
 <img width="1168" height="495" alt="image" src="https://github.com/user-attachments/assets/753ef1f1-3044-47a4-90a9-46583838fe75" />
 
-<img width="940" height="337" alt="image" src="https://github.com/user-attachments/assets/693d8d01-76c5-4481-af55-ffce187395ab" />
 
  
 ## Ramp-Up Test
@@ -187,8 +186,7 @@ Observed issues:
 | DeleteAddedOrder     | 1000                  | 	4.17secs     | 62.22    |
 | DeleteAddedProduct   | 940                  | 3.2secs        | 54.24    |
 
-
-<img width="940" height="337" alt="image" src="https://github.com/user-attachments/assets/693d8d01-76c5-4481-af55-ffce187395ab" />
+<img width="713" height="343" alt="Screenshot 2025-12-01 031942" src="https://github.com/user-attachments/assets/40cdb93b-17e6-4d36-961c-1406c2b6bfa4" />
 
 
 ## ✨ Framework Highlights
