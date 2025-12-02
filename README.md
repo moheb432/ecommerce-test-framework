@@ -1,7 +1,7 @@
 # Ecommerce test framework-QA Unified Framework
 A complete QA testing repository for an E-Commerce API, containing:  • Manual Testing documentation • Postman test collections for functional and regression validation • Automated API Testing framework using RestAssured + TestNG + Cucumber • Performance &amp; Load Testing using Apache JMeter  This project demonstrates end-to-end testing coverage
 
-📎 Full test suite and bug reports:
+📎 Full API demo link:
 [rahulshettyacademyAPI](https://rahulshettyacademy.com/client/#/dashboard/dash)
 ## 📚 Project Scope
 
