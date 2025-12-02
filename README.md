@@ -79,7 +79,7 @@ Execution performed:
 #  Data-Driven Postman Execution
 
 * CSV file used for multi-scenario testing
-* 14+ iterations executed
+* 21+ iterations executed
 
 Observed issues:
 
