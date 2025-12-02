@@ -127,6 +127,29 @@ Observed issues:
 
 ---
 ## Preformance Tesrting Jmeter 
+## Ramp-Up Test
+
+**Steps:**
+1. Test Plan → Add → Threads (Users) → Concurrency Thread Group
+2. Configure:
+   - **Target Concurrency**: Desired number of users 1000
+   - **Ramp-Up Time**: Time to reach that number 60 secs
+   - **Ramp-Up Steps**: How many increments to increase through 20
+   - **Hold Target Rate Time**: Duration to keep max load 60 secs
+   
+
+
+| Request Name         | Avg Response Time (ms) | Throughput | Error % |
+|---------------------|----------------------|------------|---------|
+| tLoginRequest        | 1872                  | 4.55secs     | 74.42    |
+| Createnewproduct     | 2674                 | 4.29	secs        | 89.52    |
+| createorderrequest   | 1000                  | 4.25secs     | 52.05    |
+| DeleteAddedOrder     | 1000                  | 	4.17secs     | 62.22    |
+| DeleteAddedProduct   | 940                  | 3.2secs        | 54.24    |
+
+<img width="713" height="343" alt="image" src="https://github.com/user-attachments/assets/58b003d5-cead-40bb-a4e8-4261e8d24616" />
+
+
 ### load test 
 - **Users:** 400
 - **Iterations:** 1
@@ -165,33 +188,6 @@ Observed issues:
 <img width="713" height="343" alt="image" src="https://github.com/user-attachments/assets/9beb2b25-248f-44bc-8ef1-0aed559186f3" />
 
 <img img width="713" height="343" alt="image" src="https://github.com/user-attachments/assets/753ef1f1-3044-47a4-90a9-46583838fe75" />
-
-
- 
-## Ramp-Up Test
-<img width="713" height="343" alt="image" src="https://github.com/user-attachments/assets/58b003d5-cead-40bb-a4e8-4261e8d24616" />
-
-**Steps:**
-1. Test Plan → Add → Threads (Users) → Concurrency Thread Group
-2. Configure:
-   - **Target Concurrency**: Desired number of users 1000
-   - **Ramp-Up Time**: Time to reach that number 60 secs
-   - **Ramp-Up Steps**: How many increments to increase through 20
-   - **Hold Target Rate Time**: Duration to keep max load 60 secs
-   
-
-
-| Request Name         | Avg Response Time (ms) | Throughput | Error % |
-|---------------------|----------------------|------------|---------|
-| tLoginRequest        | 1872                  | 4.55secs     | 74.42    |
-| Createnewproduct     | 2674                 | 4.29	secs        | 89.52    |
-| createorderrequest   | 1000                  | 4.25secs     | 52.05    |
-| DeleteAddedOrder     | 1000                  | 	4.17secs     | 62.22    |
-| DeleteAddedProduct   | 940                  | 3.2secs        | 54.24    |
-
-<img width="713" height="343" alt="Screenshot 2025-12-01 031942" src="https://github.com/user-attachments/assets/40cdb93b-17e6-4d36-961c-1406c2b6bfa4" />
-
-
 
 
 ## ✨ Framework Highlights
