@@ -65,9 +65,9 @@ This repository includes:
 
 | Bug ID  | Description                                     | Expected            | Actual                  | Severity |
 | ------- | ----------------------------------------------- | ------------------- | ----------------------- | -------- |
-| BUG-001 | Negative product price accepted                 | Should reject       | API accepts -500        | High     |
-| BUG-002 | Empty `productFor` allowed                      | Should be mandatory | API accepts empty value | Medium   |
-| BUG-003 | Special characters allowed in `productCategory` | Should be rejected  | API accepts @Fashion!   | Medium   |
+| BUG-001 | Negative product price accepted                 | Should reject         | API accepts -500        | High     |
+| BUG-002 | product deleted with existing order             | Should reject deletion| API accepts to delete   | High   |
+| BUG-003 | Special characters allowed in `productCategory` | Should be rejected    | API accepts @Fashion!   | Medium   |
 
 Execution performed:
 
