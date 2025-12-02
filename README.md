@@ -128,9 +128,9 @@ Observed issues:
 ---
 ## Preformance Tesrting Jmeter 
 ### load test 
-- **Users:** 20
-- **Iterations:** 10
-- **Ramp-up:** 10 seconds
+- **Users:** 400
+- **Iterations:** 1
+- **Ramp-up:** 60 seconds
 - **duration assertion:** 1.5 seconds
 
 | Request Name         | Avg Response Time (ms) | Throughput | Error % |
@@ -147,9 +147,9 @@ Observed issues:
 
 
 ### Stress test 
-- **Users:** 50
-- **Iterations:** 10
-- **Ramp-up:** 20 seconds
+- **Users:** 600
+- **Iterations:** 1
+- **Ramp-up:** 60 seconds
 - **duration assertion:** 1.5 seconds
 > for more info about the stress test please check this pdf : [Uploading index.html…]()
 
@@ -174,7 +174,7 @@ Observed issues:
 **Steps:**
 1. Test Plan → Add → Threads (Users) → Concurrency Thread Group
 2. Configure:
-   - **Target Concurrency**: Desired number of users 100
+   - **Target Concurrency**: Desired number of users 1000
    - **Ramp-Up Time**: Time to reach that number 60 secs
    - **Ramp-Up Steps**: How many increments to increase through 20
    - **Hold Target Rate Time**: Duration to keep max load 60 secs
